@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+       <title>Covid-19 Status</title>
+       <link rel="stylesheet" href="style.css">
+    </head>
+
+
+    <body>
+
+        <section>
+            <h1 class="heading">
+                <span>c</span>
+                <span>o</span>
+                <span>v</span>
+                <span>d</span>
+                <span>1</span>
+                <span>9</span>
+                <span class="space"></span>
+                <span>p</span>
+                <span>a</span>
+                <span>t</span>
+                <span>i</span>
+                <span>e</span>
+                <span>n</span>
+                <span>t</span>
+                <span>s</span>
+
+            </h1>
+        </section>
+        <table>
+            <tr>
+                <td>
+                    <!--html form for besic curd operation-->
+                    <form onsubmit="event.preventDefault();onFormSubmit();">
+                        <div>
+                            <label for="">Full Name</label>
+                            <input type="text" name = "fullName" id="fullName">
+                        </div>
+
+                        <div>
+                            <label for="">Pcode</label>
+                            <input type="text" name = "Pcode" id="Pcode">
+                        </div>
+
+                        <div>
+                          <label for="">Covid Status</label>
+                          <input type="text" name = "CoStatus" id="CoStatus">
+                        </div>
+
+                        <div>
+                           <label for="">City</label>
+                           <input type="text" name = "city" id="city">
+                        </div>
+
+                        <div class="form-action-buttons">
+                            <input type="submit" value="submit">
+                        </div>
+                    </form>
+
+                </td>
+                <td>
+                    <table class="list" id="covidstatuslist">
+                        <thead>
+                            <tr>
+                                <th>Full Name</th>
+                                <th>Pcode</th>
+                                <th>Covid Status</th>
+                                <th>City</th>
+
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                        </tbody>
+                    </table>
+
+                </td>
+            </tr>
+        </table>
+        <script src="script.js"></script>
+    </body>
+</html
